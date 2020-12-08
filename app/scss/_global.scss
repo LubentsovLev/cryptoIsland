@@ -1,0 +1,99 @@
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+img {
+  max-width: 100%;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  font-family: Uni Neue;
+  font-weight: 500;
+  color: $fontbBlack;
+  &.dis {
+    overflow: hidden;
+  }
+}
+button {
+  cursor: pointer;
+}
+button,
+a,
+textarea,
+input,
+select {
+  border: none;
+  outline: none;
+}
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  outline: none;
+  display: inline;
+  text-decoration: none;
+  margin: 0;
+  color: $fontbBlack;
+  padding: 0;
+  transition: 0.4s;
+  cursor: pointer;
+  // color: rgb(255, 255, 255);
+  &:hover {
+    opacity: 0.6;
+  }
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  font-weight: 500;
+}
+textarea {
+  resize: none;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 7px;
+  max-width: 1160px;
+  &__main {
+    margin: 0 auto;
+    max-width: 1100px;
+  }
+}
+.main {
+  &__block {
+    // min-height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+}
+.btn {
+  transition: 0.4s;
+  background: $btn;
+  box-shadow: 0px 4px 0px #3c7772, 0px 15px 80px rgba(193, 242, 238, 0.2),
+    inset 0px 8px 26px rgba(255, 255, 255, 0.25);
+  border-radius: 5px;
+  padding: 20px 29px;
+  font-weight: bold;
+  font-size: 16px;
+  color: #fff;
+  line-height: 140%;
+  cursor: pointer;
+  text-transform: uppercase;
+  &:hover {
+    opacity: 0.7;
+    color: $fontbBlack;
+  }
+}

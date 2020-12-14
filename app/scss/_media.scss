@@ -30,36 +30,36 @@
 }
 
 @media (max-width: 1160px) {
-  .firstMain {
-    &__bottom {
-      flex-direction: column;
-      align-items: center;
-      &-items {
-        flex-direction: column;
-      }
-      &-item {
-        margin: 0;
-        margin-bottom: 20px;
-      }
-    }
-    &__header {
-      &-logo {
-        font-size: 20px;
-        margin-right: 10px;
-      }
-      &-item {
-        margin-right: 20px;
-        font-size: 14px;
-      }
-      &-phone {
-        font-size: 16px;
-        margin-right: 10px;
-      }
-      &-btn {
-        padding: 14px 20px;
-      }
-    }
-  }
+  // .firstMain {
+  //   &__bottom {
+  //     flex-direction: column;
+  //     align-items: center;
+  //     &-items {
+  //       flex-direction: column;
+  //     }
+  //     &-item {
+  //       margin: 0;
+  //       margin-bottom: 20px;
+  //     }
+  //   }
+  //   &__header {
+  //     &-logo {
+  //       font-size: 20px;
+  //       margin-right: 10px;
+  //     }
+  //     &-item {
+  //       margin-right: 20px;
+  //       font-size: 14px;
+  //     }
+  //     &-phone {
+  //       font-size: 16px;
+  //       margin-right: 10px;
+  //     }
+  //     &-btn {
+  //       padding: 14px 20px;
+  //     }
+  //   }
+  // }
 }
 @media (max-width: 980px) {
   .panel {
@@ -195,19 +195,19 @@
           bottom: 0;
         }
       }
-      .burger__burger.active::after {
+      .burger__burger.burger_active::after {
         transform: rotate(45deg);
         top: 6px;
         transition: all 0.3s ease 0s;
         background-color: $green;
       }
-      .burger__burger.active::before {
+      .burger__burger.burger_active::before {
         transform: rotate(-45deg);
         bottom: 6px;
         transition: all 0.3s ease 0s;
         background-color: $green;
       }
-      .burger__burger.active span {
+      .burger__burger.burger_active span {
         opacity: 0;
         transition: all 0.3s;
         background-color: $green;
@@ -357,31 +357,6 @@
 }
 @media (max-width: 760px) {
   .firstMain {
-    &-bg {
-      padding: 50px 0 50px;
-      background-image: url(../img/firstMain/bg.png);
-      background-image: none;
-      background-repeat: no-repeat;
-      background-size: 100%;
-
-      background-position: center;
-    }
-    &__header {
-      padding-bottom: 50px;
-    }
-    &__title {
-      padding-bottom: 30px;
-      margin: 0 auto;
-      text-align: center;
-      max-width: 500px;
-      color: $main;
-      font-size: 35px;
-      line-height: 40px;
-    }
-    &__subtitle {
-      max-width: 100%;
-      text-align: center;
-    }
     &__header-mob {
       z-index: 100;
       position: fixed;
@@ -394,6 +369,7 @@
       align-items: center;
       justify-content: space-between;
       padding: 15px 15px;
+      display: none;
       .header__logo {
         //   height: 50px;
         img {
@@ -429,7 +405,7 @@
     }
     &__header {
       &-logo {
-        display: none;
+        // display: none;
       }
       &-right {
         display: none;
@@ -483,19 +459,19 @@
       bottom: 0;
     }
   }
-  .burger__burger.active::after {
+  .burger__burger.burger_active::after {
     transform: rotate(45deg);
     top: 11px;
     transition: all 0.3s ease 0s;
     background-color: $green;
   }
-  .burger__burger.active::before {
+  .burger__burger.burger_active::before {
     transform: rotate(-45deg);
     bottom: 11px;
     transition: all 0.3s ease 0s;
     background-color: $green;
   }
-  .burger__burger.active span {
+  .burger__burger.burger_active span {
     opacity: 0;
     transition: all 0.3s;
     background-color: $green;
@@ -666,20 +642,9 @@
 @media (max-height: 850px) {
   .panel {
     position: fixed;
-  }
-  // .panel__container {
-  //   overflow-y: scroll;
-  //   overflow-x: hidden;
-  //   height: 100%;
-  // }
-  // .panel__padding {
-  //   padding: 20px 40px;
-  // }
-
-  .panel__inner {
-    // overflow-y: scroll;
-    // overflow-x: hidden;
-    height: 100%;
+    &__inner {
+      height: 100%;
+    }
   }
 }
 @media (max-width: 630px) {

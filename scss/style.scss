@@ -39,6 +39,10 @@
       color: #889993;
       font-size: 16px;
       line-height: 140%;
+      max-width: 140px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
     }
     &-copy {
       width: 40px;
@@ -515,6 +519,138 @@
       }
     }
     &-about {
+    }
+  }
+}
+
+.iAuction {
+  &__container {
+    width: 100%;
+  }
+  &__top {
+    margin-bottom: 21px;
+  }
+  &__title {
+    font-size: 48px;
+    line-height: 65px;
+    margin-bottom: 30px;
+  }
+  &__btns {
+    display: flex;
+    justify-content: space-between;
+
+    &-left {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    &-blue {
+      text-transform: uppercase;
+      cursor: pointer;
+      background: $main;
+      border: 1px solid #489d96;
+      border-radius: 5px;
+      margin-right: 10px;
+      color: #fff;
+      padding: 14px 29px;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 140%;
+    }
+    &-wh {
+      text-transform: uppercase;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 140%;
+      color: $main;
+      border-radius: 5px;
+      background-color: transparent;
+      border: 1px solid #489d96;
+      padding: 14px 29px;
+    }
+    &-btn {
+    }
+  }
+  &__items {
+  }
+  &__item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    background: #c9d9d4;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    &:nth-last-child(1) {
+      margin-bottom: 0;
+    }
+    &-fr {
+      display: flex;
+      align-items: center;
+      // justify-content: center;
+      width: 80%;
+    }
+    &-title {
+      // max-width: 20%;
+      margin-right: 10%;
+      p {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 150%;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        margin-bottom: 5px;
+      }
+      span {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        color: #3e4652;
+        display: block;
+        font-size: 16px;
+        line-height: 140%;
+      }
+    }
+    &-prices {
+      display: flex;
+      max-width: 30%;
+    }
+    &-price {
+      max-width: 59%;
+      margin-right: 17%;
+      &:nth-last-child(1) {
+        margin-right: 0;
+      }
+      span {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        color: #889993;
+        display: block;
+        font-size: 16px;
+        line-height: 140%;
+        margin-bottom: 10px;
+      }
+      p {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 150%;
+      }
+    }
+    &-start {
+    }
+    &-now {
+    }
+    &-btn {
     }
   }
 }

@@ -1,4 +1,19 @@
-$(function () {});
+$(function () {
+  $('.panel__ln-copy').on('click', function () {
+    var code = document.querySelector('.panel__ln-text'); // #text - блок из которого нужно скопировать
+    var range = document.createRange();
+    range.selectNode(code);
+    window.getSelection().addRange(range);
+    try {
+      var successful = document.execCommand('copy');
+      var msg = successful ? 'удачно' : 'неудачно';
+      // alert('Код скопирован ' + msg);
+    } catch (err) {
+      // alert('Код не скопирован автоматически :с' + '\n' + 'Попробуйте вручную');
+    }
+    window.getSelection().removeAllRanges();
+  });
+});
 
 let burger = document.querySelector('.burger__burger');
 let nav = document.querySelector('.panel__main-menu');

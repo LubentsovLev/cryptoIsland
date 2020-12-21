@@ -19,6 +19,8 @@ let burger = document.querySelector('.burger__burger');
 let nav = document.querySelector('.panel__main-menu');
 
 let popup__wallet = document.querySelector('.popup__wallet');
+let popup__checkout = document.querySelector('.popup__checkout');
+let popup__help = document.querySelector('.popup__help');
 burger.addEventListener('click', function () {
   this.classList.toggle('active');
   nav.classList.toggle('nav_active');
@@ -43,11 +45,25 @@ document.addEventListener('click', function (e) {
     popup__wallet.classList.add('popup__active');
     toggleOwerflow('hidden');
   }
+  if (e.target.classList.contains('open_popup__checkout')) {
+    closePop(popup__checkout);
+    popup__checkout.classList.add('popup__active');
+    toggleOwerflow('hidden');
+  }
+  if (e.target.classList.contains('open_popup__help')) {
+    closePop(popup__help);
+    popup__help.classList.add('popup__active');
+    toggleOwerflow('hidden');
+  }
   if (
     e.target.classList.contains('popup__x') ||
-    e.target.classList.contains('popup')
+    e.target.classList.contains('popup') ||
+    e.target.classList.contains('btn_err')
   ) {
     popup__wallet.classList.remove('popup__active');
+    popup__checkout.classList.remove('popup__active');
+    popup__help.classList.remove('popup__active');
+
     toggleOwerflow('visible');
   }
 });

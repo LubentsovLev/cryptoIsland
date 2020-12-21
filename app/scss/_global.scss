@@ -67,6 +67,7 @@ textarea {
   margin: 0 auto;
   max-width: 1160px;
   &__main {
+    width: 100%;
     padding: 50px;
     margin: 0 auto;
     max-width: 1100px;
@@ -92,6 +93,11 @@ textarea {
   line-height: 140%;
   cursor: pointer;
   text-transform: uppercase;
+  &_err {
+    box-shadow: none;
+    text-align: center;
+    background: rgb(255, 91, 91);
+  }
   &:hover {
     opacity: 0.7;
     color: $fontbBlack;

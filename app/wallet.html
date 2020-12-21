@@ -51,9 +51,13 @@
                 </div>
               </div>
               <div class="panel__bottom panel__padding">
-                <div class="panel__bottom-ln">
-                  <img src="img/panel/support.svg" alt="" />
-                  <span>Поддержка</span>
+                <div class="panel__bottom-ln open_popup__help">
+                  <img
+                    class="open_popup__help"
+                    src="img/panel/support.svg"
+                    alt=""
+                  />
+                  <span class="open_popup__help">Поддержка</span>
                 </div>
                 <div class="panel__bottom-ln">
                   <img src="img/panel/settings.svg" alt="" />
@@ -91,7 +95,11 @@
                   >
                     Пополнить
                   </div>
-                  <div class="wallet__btn wallet__btn-out btn">вывести</div>
+                  <div
+                    class="wallet__btn wallet__btn-out btn open_popup__checkout"
+                  >
+                    вывести
+                  </div>
                 </div>
                 <div class="wallet__btn wallet__btn-transfer btn">
                   Перевести другому аккаунту
@@ -207,6 +215,44 @@
             </select>
             <input placeholder="Сумма" />
             <button class="btn">Пополнить</button>
+          </form>
+          <div class="popup__confirm">
+            <p>Нажимая на кнопку, вы даете согласие на</p>
+            <a href="#">обработку персональных данных</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="popup popup__checkout">
+      <div class="popup__inner">
+        <div class="popup__x"><img src="img/popup/x.svg" alt="" /></div>
+        <div class="popup__container container">
+          <h4 class="popup__title">Вывести средства</h4>
+          <!-- <p class="popup__subtitle">Введите данные нужные для входа</p> -->
+          <form action="" class="popup__form">
+            <input placeholder="Номер кошелька:" />
+            <input placeholder="Сумма" />
+            <button class="btn">Отправить запрос на вывод</button>
+            <div class="btn btn_err">Отмена</div>
+          </form>
+          <div class="popup__confirm">
+            <p>Нажимая на кнопку, вы даете согласие на</p>
+            <a href="#">обработку персональных данных</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="popup popup__help">
+      <div class="popup__inner">
+        <div class="popup__x"><img src="img/popup/x.svg" alt="" /></div>
+        <div class="popup__container container">
+          <h4 class="popup__title">Задать вопрос</h4>
+          <!-- <p class="popup__subtitle">Введите данные нужные для входа</p> -->
+          <form action="" class="popup__form">
+            <input placeholder="Имя" />
+            <input placeholder="email" type="email" />
+            <textarea placeholder="Опишите ваш опрос"></textarea>
+            <button class="btn">Задать вопрос</button>
           </form>
           <div class="popup__confirm">
             <p>Нажимая на кнопку, вы даете согласие на</p>

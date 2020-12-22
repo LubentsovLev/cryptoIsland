@@ -33,11 +33,15 @@
           <div class="panel__main-menu">
             <div class="panel__main-menu-inner">
               <nav class="panel__menu panel__padding">
-                <div class="panel__menu-ln">Мои квадраты</div>
-                <div class="panel__menu-ln">Аукцион</div>
-                <div class="panel__menu-ln">Мероприятия</div>
-                <div class="panel__menu-ln">Голосование</div>
-                <div class="panel__menu-ln">Кошелек</div>
+                <a href="sectionChoose.html" class="panel__menu-ln"
+                  >Мои квадраты</a
+                >
+                <a href="internalAuction.html" class="panel__menu-ln"
+                  >Аукцион</a
+                >
+                <a href="events.html" class="panel__menu-ln">Мероприятия</a>
+                <a href="vote.html" class="panel__menu-ln">Голосование</a>
+                <a href="wallet.html" class="panel__menu-ln">Кошелек</a>
               </nav>
               <div class="panel__ln panel__padding">
                 <div class="panel__ln-title">Ваша реферальная ссылка:</div>
@@ -128,6 +132,26 @@
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="popup popup__help">
+      <div class="popup__inner">
+        <div class="popup__x"><img src="img/popup/x.svg" alt="" /></div>
+        <div class="popup__container container">
+          <h4 class="popup__title">Задать вопрос</h4>
+          <!-- <p class="popup__subtitle">Введите данные нужные для входа</p> -->
+          <form action="" class="popup__form">
+            <input placeholder="Имя" />
+            <input placeholder="email" type="email" />
+            <textarea placeholder="Опишите ваш опрос"></textarea>
+            <button class="btn">Задать вопрос</button>
+          </form>
+          <div class="popup__confirm">
+            <p>Нажимая на кнопку, вы даете согласие на</p>
+            <a href="#">обработку персональных данных</a>
           </div>
         </div>
       </div>

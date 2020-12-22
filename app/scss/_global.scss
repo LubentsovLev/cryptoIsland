@@ -74,8 +74,26 @@ textarea {
   }
 }
 .main {
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &__inner {
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    max-width: 1600px;
+    margin: 0 auto;
+  }
   &__block {
     // min-height: 100vh;
+    background-size: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    width: 100%;
+    min-height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
     display: flex;
     align-items: center;
   }

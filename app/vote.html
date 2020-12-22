@@ -75,68 +75,50 @@
     </div>
     <div class="main">
       <div class="main__inner">
-        <div class="square main__block">
-          <div class="square__container container__main">
-            <div class="square__header">
-              <div class="square__header-left">
-                <div class="square__header-name">
-                  <span>Здравствуйте,</span>
-                  <p>Константин</p>
-                </div>
-                <div class="square__header-yours">
-                  <span>Вам пренадлежит:</span>
-                  <p>7 м2</p>
-                </div>
-              </div>
-              <div class="square__header-right">
-                <div class="square__header-links">
-                  <a>Посмотреть на карте</a>
-                  <a>Продать на аукционе</a>
-                </div>
-                <div class="square__header-btn btn">
-                  <span class="square__header-btn-desc"
-                    >Оформить купленную землю</span
-                  >
-                  <span class="square__header-btn-mobil">Оформить землю</span>
-                </div>
-              </div>
-            </div>
-            <div class="squareN__main">
-              <div class="squareN__left">
-                <div class="squareN__calc-inner">
-                  <p class="squareN__title squareN__title-top">
-                    <span>Вы можете приобрести еще:</span> <b>33 м2</b>
-                  </p>
-                  <div class="squareN__calc">
-                    <p class="squareN__calc-title">
-                      Укажите количество метров для покупки:
-                    </p>
-                    <div class="squareN__calc-calc">
-                      <div class="squareN__calc-btn">-</div>
-                      <input type="text" />
-                      <div class="squareN__calc-btn">+</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="squareN__cost-inner squareN__title-desc">
-                  <p class="squareN__title">
-                    <span>Стоимость:</span> <b>50 000 руб.</b>
-                  </p>
-                  <div class="squareN__btn btn">Купить землю</div>
-                </div>
-              </div>
-              <div class="squareN__right">
-                <div class="squareN__right-img"></div>
-                <div class="squareN__right-titlePl">
-                  <div class="squareN__cost-inner">
-                    <p class="squareN__title">
-                      <span>Стоимость:</span> <b>50 000 руб.</b>
-                    </p>
-                    <div class="squareN__btn btn">Купить землю</div>
-                  </div>
-                </div>
-              </div>
-            </div>
+        <div
+          class="main__block"
+          style="background-image: url(img/pages/vote.png)"
+        ></div>
+      </div>
+    </div>
+    <div class="popup popup__wallet">
+      <div class="popup__inner">
+        <div class="popup__x"><img src="img/popup/x.svg" alt="" /></div>
+        <div class="popup__container container">
+          <h4 class="popup__title">Пополнение средств</h4>
+          <!-- <p class="popup__subtitle">Введите данные нужные для входа</p> -->
+          <form action="" class="popup__form">
+            <select>
+              <option>Выберите валюту</option>
+              <option>USDT</option>
+              <option>ETH</option>
+              <option>BTC</option>
+            </select>
+            <input placeholder="Сумма" />
+            <button class="btn">Пополнить</button>
+          </form>
+          <div class="popup__confirm">
+            <p>Нажимая на кнопку, вы даете согласие на</p>
+            <a href="#">обработку персональных данных</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="popup popup__checkout">
+      <div class="popup__inner">
+        <div class="popup__x"><img src="img/popup/x.svg" alt="" /></div>
+        <div class="popup__container container">
+          <h4 class="popup__title">Вывести средства</h4>
+          <!-- <p class="popup__subtitle">Введите данные нужные для входа</p> -->
+          <form action="" class="popup__form">
+            <input placeholder="Номер кошелька:" />
+            <input placeholder="Сумма" />
+            <button class="btn">Отправить запрос на вывод</button>
+            <div class="btn btn_err">Отмена</div>
+          </form>
+          <div class="popup__confirm">
+            <p>Нажимая на кнопку, вы даете согласие на</p>
+            <a href="#">обработку персональных данных</a>
           </div>
         </div>
       </div>

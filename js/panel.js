@@ -67,3 +67,29 @@ document.addEventListener('click', function (e) {
     toggleOwerflow('visible');
   }
 });
+
+//events
+//events
+//events
+
+document.addEventListener('click', function (e) {
+  if (e.target.classList.contains('events__item-text')) {
+    e.target.classList.add('active');
+    e.target.parentElement.classList.add('text-active');
+    if (document.documentElement.clientWidth < 738) {
+      document.body.style.overflow = 'hidden';
+    }
+  }
+  if (e.target.classList.contains('events__item-info-x')) {
+    e.target.parentElement.parentElement.classList.remove('active');
+    e.target.parentElement.parentElement.parentElement.classList.remove(
+      'text-active'
+    );
+
+    document.body.style.overflow = 'visible';
+  }
+});
+
+//events
+//events
+//events

@@ -111,6 +111,9 @@ textarea {
   line-height: 140%;
   cursor: pointer;
   text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   &_err {
     box-shadow: none;
     text-align: center;

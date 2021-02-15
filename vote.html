@@ -75,69 +75,88 @@
     </div>
     <div class="main">
       <div class="main__inner">
-        <div
-          class="main__block"
-          style="background-image: url(img/pages/vote.png)"
-        ></div>
-      </div>
-    </div>
-    <div class="popup popup__wallet">
-      <div class="popup__inner">
-        <div class="popup__x"><img src="img/popup/x.svg" alt="" /></div>
-        <div class="popup__container container">
-          <h4 class="popup__title">Пополнение средств</h4>
-          <!-- <p class="popup__subtitle">Введите данные нужные для входа</p> -->
-          <form action="" class="popup__form">
-            <select>
-              <option>Выберите валюту</option>
-              <option>USDT</option>
-              <option>ETH</option>
-              <option>BTC</option>
-            </select>
-            <input placeholder="Сумма" />
-            <button class="btn">Пополнить</button>
-          </form>
-          <div class="popup__confirm">
-            <p>Нажимая на кнопку, вы даете согласие на</p>
-            <a href="#">обработку персональных данных</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="popup popup__checkout">
-      <div class="popup__inner">
-        <div class="popup__x"><img src="img/popup/x.svg" alt="" /></div>
-        <div class="popup__container container">
-          <h4 class="popup__title">Вывести средства</h4>
-          <!-- <p class="popup__subtitle">Введите данные нужные для входа</p> -->
-          <form action="" class="popup__form">
-            <input placeholder="Номер кошелька:" />
-            <input placeholder="Сумма" />
-            <button class="btn">Отправить запрос на вывод</button>
-            <div class="btn btn_err">Отмена</div>
-          </form>
-          <div class="popup__confirm">
-            <p>Нажимая на кнопку, вы даете согласие на</p>
-            <a href="#">обработку персональных данных</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="popup popup__help">
-      <div class="popup__inner">
-        <div class="popup__x"><img src="img/popup/x.svg" alt="" /></div>
-        <div class="popup__container container">
-          <h4 class="popup__title">Задать вопрос</h4>
-          <!-- <p class="popup__subtitle">Введите данные нужные для входа</p> -->
-          <form action="" class="popup__form">
-            <input placeholder="Имя" />
-            <input placeholder="email" type="email" />
-            <textarea placeholder="Опишите ваш опрос"></textarea>
-            <button class="btn">Задать вопрос</button>
-          </form>
-          <div class="popup__confirm">
-            <p>Нажимая на кнопку, вы даете согласие на</p>
-            <a href="#">обработку персональных данных</a>
+        <div class="vote main__block">
+          <div class="lot__container container__main">
+            <div class="vote__top">
+              <h1 class="events__title">
+                Голосование среди владельцев острова
+              </h1>
+              <a href="#" class="vote__ln">Правила проведения голосований</a>
+            </div>
+            <div class="vote__block">
+              <h3 class="vote__block-title">
+                Какого артиста пригласить на день острова?
+              </h3>
+              <p class="vote__block-text">
+                6 ноября 2020 года нашему острову будет 1 год. Кого из
+                перечисленных ниже артистов вы бы хотели видеть на празднике в
+                качестве исполнителя?
+              </p>
+              <div class="vote__block-inputs">
+                <div class="vote__block-input check">
+                  <input name="vote" type="radio" id="v_1" type="text" />
+                  <label for="v_1">Максим Галкин</label>
+                </div>
+                <div class="vote__block-input check">
+                  <input name="vote" type="radio" id="v_2" type="text" />
+                  <label for="v_2">Моргенштерн</label>
+                </div>
+                <div class="vote__block-input check">
+                  <input name="vote" type="radio" id="v_3" type="text" />
+                  <label for="v_3">Дуэт Тимати и Гуфа</label>
+                </div>
+              </div>
+              <div class="vote__block-btn btn">Проголосовать</div>
+            </div>
+            <div class="vote__block">
+              <h3 class="vote__block-title">
+                Какого артиста пригласить на день острова?
+              </h3>
+              <p class="vote__block-text">
+                6 ноября 2020 года нашему острову будет 1 год. Кого из
+                перечисленных ниже артистов вы бы хотели видеть на празднике в
+                качестве исполнителя?
+              </p>
+              <div class="vote__block-inputs">
+                <div class="vote__block-input range" value="100">
+                  <p>Максим Галкин</p>
+                  <input
+                    type="range"
+                    value="100"
+                    step="1"
+                    min="0"
+                    max="100"
+                    style="width: 100%"
+                  />
+                  <span>1022 голоса</span>
+                </div>
+                <div class="vote__block-input range" value="12">
+                  <p>Моргенштерн</p>
+                  <input
+                    type="range"
+                    value="12"
+                    step="1"
+                    min="0"
+                    max="100"
+                    style="width: 12%"
+                  />
+                  <span>122 голоса</span>
+                </div>
+                <div class="vote__block-input range" value="1">
+                  <p>Дуэт Тимати и Гуфа</p>
+                  <input
+                    type="range"
+                    value="1"
+                    step="1"
+                    min="0"
+                    max="100"
+                    style="width: 1%"
+                  />
+                  <span>1 голос</span>
+                </div>
+              </div>
+              <div class="vote__block-btn btn">Проголосовать</div>
+            </div>
           </div>
         </div>
       </div>
